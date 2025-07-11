@@ -1,0 +1,36 @@
+@baseUrl = http://localhost:3000
+
+### RECADOS
+### BUSCA TODOS RECADOS
+GET {{baseUrl}}/recados/?limit=10&user=luis
+### BUSCA UM RECADO ESPECIFICO
+GET {{baseUrl}}/recados/2
+
+### CRIA UM RECADO
+POST {{baseUrl}}/recados
+Content-Type: application/json
+
+ {
+    "texto": "teste",
+    "de": "joao",
+    "para": "ana"
+  }
+
+### ATUALIZA UM ITEM NO JSON DO RECADO
+PATCH  {{baseUrl}}/recados/2/
+Content-Type: application/json
+
+ {
+    "texto": "teste2",
+    "de": "joao",
+    "para": "ana"
+  }
+### ATUALIZA TODO O JSON DO RECADO
+PUT  {{baseUrl}}/recados/1/
+Content-Type: application/json
+
+{
+    "recado": "Json atualizado com sucesso"
+}
+### DELETA O RECADO
+DELETE {{baseUrl}}/recados/2/
