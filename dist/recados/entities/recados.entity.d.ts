@@ -5,4 +5,6 @@ export declare class RecadoEntity {
     para: string;
     lido: boolean;
     data: Date;
+    createdAt?: Date;
+    updateAt?: Date;
 }
