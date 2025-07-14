@@ -10,7 +10,7 @@ exports.ConceitosAutomaticoService = void 0;
 const common_1 = require("@nestjs/common");
 let ConceitosAutomaticoService = class ConceitosAutomaticoService {
     retornoController() {
-        return 'Retornou ao controller o service';
+        return "Retornou ao controller o service";
     }
 };
 exports.ConceitosAutomaticoService = ConceitosAutomaticoService;

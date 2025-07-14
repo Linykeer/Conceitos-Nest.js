@@ -28,7 +28,7 @@ __decorate([
     __metadata("design:returntype", String)
 ], ConceitosAutomaticoController.prototype, "home", null);
 exports.ConceitosAutomaticoController = ConceitosAutomaticoController = __decorate([
-    (0, common_1.Controller)('conceitos-automatico'),
+    (0, common_1.Controller)("conceitos-automatico"),
     __metadata("design:paramtypes", [conceitos_automatico_service_1.ConceitosAutomaticoService])
 ], ConceitosAutomaticoController);
 //# sourceMappingURL=conceitos-automatico.controller.js.map

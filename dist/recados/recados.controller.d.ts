@@ -1,6 +1,6 @@
-import { RecadosServce } from './recados.service';
-import { CreateRecadoDto } from './dto/create-recado.dto';
-import { UpdateRecadoDto } from './dto/update-recado.dto';
+import { RecadosServce } from "./recados.service";
+import { CreateRecadoDto } from "./dto/create-recado.dto";
+import { UpdateRecadoDto } from "./dto/update-recado.dto";
 export declare class RecadosController {
     private readonly recadosService;
     constructor(recadosService: RecadosServce);

@@ -21,18 +21,4 @@ __decorate([
     (0, class_validator_1.MaxLength)(255),
     __metadata("design:type", String)
 ], CreateRecadoDto.prototype, "texto", void 0);
-__decorate([
-    (0, class_validator_1.IsString)(),
-    (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.MinLength)(2),
-    (0, class_validator_1.MaxLength)(50),
-    __metadata("design:type", String)
-], CreateRecadoDto.prototype, "de", void 0);
-__decorate([
-    (0, class_validator_1.IsString)(),
-    (0, class_validator_1.IsNotEmpty)(),
-    (0, class_validator_1.MinLength)(2),
-    (0, class_validator_1.MaxLength)(50),
-    __metadata("design:type", String)
-], CreateRecadoDto.prototype, "para", void 0);
 //# sourceMappingURL=create-recado.dto.js.map

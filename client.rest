@@ -31,3 +31,29 @@ Content-Type: application/json
 }
 ### DELETA O RECADO
 DELETE {{baseUrl}}/recados/5/
+
+###############################################################################
+
+### Pessoas
+### BUSCA TODAS PESSOAS
+GET {{baseUrl}}/pessoas/
+### BUSCA UMA PESSOA ESPECIFICA
+GET {{baseUrl}}/pessoas/1
+
+### CRIA UMA PESSOA
+POST {{baseUrl}}/pessoas
+Content-Type: application/json
+
+  {
+    "email": "linykeer@gmail.com",
+    "nome": "Linykeer",
+    "password": "123123"
+  }
+
+### ATUALIZA UM ITEM OU MAIS DE UMA PESSOA
+PATCH  {{baseUrl}}/pessoas/9/
+Content-Type: application/json
+
+{
+   "nome": "Linykeer Almeida"
+}

@@ -17,11 +17,9 @@ let RecadosModule = class RecadosModule {
 exports.RecadosModule = RecadosModule;
 exports.RecadosModule = RecadosModule = __decorate([
     (0, common_1.Module)({
-        controllers: [
-            recados_controller_1.RecadosController
-        ],
+        controllers: [recados_controller_1.RecadosController],
         providers: [recados_service_1.RecadosServce],
-        imports: [typeorm_1.TypeOrmModule.forFeature([recados_entity_1.RecadoEntity]),]
+        imports: [typeorm_1.TypeOrmModule.forFeature([recados_entity_1.RecadoEntity])],
     })
 ], RecadosModule);
 //# sourceMappingURL=recados.module.js.map

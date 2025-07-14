@@ -29,7 +29,7 @@ let RecadosServce = class RecadosServce {
         const recado = await this.recadoRepository.findOne({
             where: {
                 id,
-            }
+            },
         });
         if (recado)
             return recado;
@@ -39,7 +39,7 @@ let RecadosServce = class RecadosServce {
         const newRecado = {
             ...createRecadoDto,
             lido: false,
-            data: new Date()
+            data: new Date(),
         };
         const recado = await this.recadoRepository.create(newRecado);
         return this.recadoRepository.save(recado);
@@ -51,7 +51,7 @@ let RecadosServce = class RecadosServce {
         };
         const recado = await this.recadoRepository.preload({
             id,
-            ...partialUpdateRecadoDto
+            ...partialUpdateRecadoDto,
         });
         if (!recado) {
             return this.throwNotFoundError();
@@ -60,14 +60,14 @@ let RecadosServce = class RecadosServce {
         return recado;
     }
     async remove(id) {
-        const recado = await this.recadoRepository.findOneBy({ id, });
+        const recado = await this.recadoRepository.findOneBy({ id });
         if (!recado) {
             return this.throwNotFoundError();
         }
         return this.recadoRepository.remove(recado);
     }
     throwNotFoundError() {
-        throw new common_1.NotFoundException('Recado não encontrado!');
+        throw new common_1.NotFoundException("Recado não encontrado!");
     }
 };
 exports.RecadosServce = RecadosServce;

@@ -1,4 +1,4 @@
-import { ConceitosManualService } from './conceitos-manual.service';
+import { ConceitosManualService } from "./conceitos-manual.service";
 export declare class ConceitosManualController {
     private readonly conceitosManualService;
     constructor(conceitosManualService: ConceitosManualService);

@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.RecadoEntity = void 0;
+const pessoa_entity_1 = require("../../pessoas/entities/pessoa.entity");
 const typeorm_1 = require("typeorm");
 let RecadoEntity = class RecadoEntity {
 };
@@ -19,16 +20,18 @@ __decorate([
     __metadata("design:type", Number)
 ], RecadoEntity.prototype, "id", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ type: 'varchar', length: 255 }),
+    (0, typeorm_1.Column)({ type: "varchar", length: 255 }),
     __metadata("design:type", String)
 ], RecadoEntity.prototype, "texto", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ type: 'varchar', length: 50 }),
-    __metadata("design:type", String)
+    (0, typeorm_1.ManyToOne)(() => pessoa_entity_1.Pessoa),
+    (0, typeorm_1.JoinColumn)({ name: 'de' }),
+    __metadata("design:type", pessoa_entity_1.Pessoa)
 ], RecadoEntity.prototype, "de", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ type: 'varchar', length: 50 }),
-    __metadata("design:type", String)
+    (0, typeorm_1.ManyToOne)(() => pessoa_entity_1.Pessoa),
+    (0, typeorm_1.JoinColumn)({ name: 'para' }),
+    __metadata("design:type", pessoa_entity_1.Pessoa)
 ], RecadoEntity.prototype, "para", void 0);
 __decorate([
     (0, typeorm_1.Column)({ default: false }),

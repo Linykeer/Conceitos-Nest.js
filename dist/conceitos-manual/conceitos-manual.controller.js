@@ -28,7 +28,7 @@ __decorate([
     __metadata("design:returntype", String)
 ], ConceitosManualController.prototype, "home", null);
 exports.ConceitosManualController = ConceitosManualController = __decorate([
-    (0, common_1.Controller)('conceitos-manual'),
+    (0, common_1.Controller)("conceitos-manual"),
     __metadata("design:paramtypes", [conceitos_manual_service_1.ConceitosManualService])
 ], ConceitosManualController);
 //# sourceMappingURL=conceitos-manual.controller.js.map

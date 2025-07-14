@@ -1,7 +1,7 @@
-import { Controller, Get } from '@nestjs/common';
-import { ConceitosManualService } from './conceitos-manual.service';
+import { Controller, Get } from "@nestjs/common";
+import { ConceitosManualService } from "./conceitos-manual.service";
 
-@Controller('conceitos-manual')
+@Controller("conceitos-manual")
 export class ConceitosManualController {
   constructor(
     private readonly conceitosManualService: ConceitosManualService,

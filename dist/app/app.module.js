@@ -12,6 +12,7 @@ const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const recados_module_1 = require("../recados/recados.module");
 const typeorm_1 = require("@nestjs/typeorm");
+const pessoas_module_1 = require("../pessoas/pessoas.module");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
@@ -19,16 +20,17 @@ exports.AppModule = AppModule = __decorate([
     (0, common_1.Module)({
         imports: [
             typeorm_1.TypeOrmModule.forRoot({
-                type: 'postgres',
-                host: 'localhost',
+                type: "postgres",
+                host: "localhost",
                 port: 5432,
-                username: 'postgres',
-                database: 'postgres',
-                password: '123123',
+                username: "postgres",
+                database: "postgres",
+                password: "123123",
                 autoLoadEntities: true,
                 synchronize: true,
             }),
-            recados_module_1.RecadosModule
+            recados_module_1.RecadosModule,
+            pessoas_module_1.PessoasModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],

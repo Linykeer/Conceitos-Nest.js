@@ -10,7 +10,7 @@ exports.ConceitosManualService = void 0;
 const common_1 = require("@nestjs/common");
 let ConceitosManualService = class ConceitosManualService {
     solucionaHome() {
-        return 'Home do conceitos manual solucionaad';
+        return "Home do conceitos manual solucionaad";
     }
 };
 exports.ConceitosManualService = ConceitosManualService;
